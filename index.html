@@ -25,7 +25,20 @@
 			First Name: <input type="text" name="fname" /> <br />
 			Last Name: <input type="text" name="lname" /><br />
 			Screen Name: <input type="text" name="scrname" /><br />
-			Email: <input type="text" name="email" minlength="5" required /><br />
+			Password: <input type="password" name="pw" minlength="5" required /><br />
+			Email: <input type="text" name="email" required /><br />
+			
+			<label for="tel-select">Phone: </label>
+
+			<select name="tel-type" id="">
+				<option value="">--select type--</option>
+				<option value="cell">Cell</option>
+				<option value="work">Work</option>
+				<option value="home">Home</option> 
+			</select>
+			
+			<input type="tel" name="phone" minlength="10" required /><br />
+			
 			I certify I am 18+ years of age
 			<input type="checkbox" name="minage" required />
 			<br />
@@ -33,12 +46,23 @@
 		</form>
 
 		<h4>OK, L-E-T-S-G-O...</h4>
-		<a href="www.lawyersgunsmoneyblog.com"><h5>Lawyers, Guns & Money</h5></a>
+		<a href="www.lawyersgunsmoneyblog.com"><h3>Lawyers, Guns & Money</h3></a>
 		<img
 			src="https://www.lawyersgunsmoneyblog.com/wp-content/uploads/2023/03/cropped-lgm_logo-1.jpg"
 			alt=""
 			height="40"
 			width="160"
 		/>
+		<p><strong>Covers:</strong> Politics, foreign policy, and the law</p>
+		<form action="">
+			Stars <em>(1-5)</em> <input type="number" min="1" max="5" /> <br>
+			<label for="humor-select">Choose a humor rating:</label>
+			<select name="humor"><option value="">--Please choose and option--</option>
+				<option value="hilarious">Hi-larious</option>
+				<option value="funny">I laughed</option>
+				<option value="ok">Smiled</option>
+				<option value="mediocre">Meh</option>
+				<option value="unfunny">Jeff Foxworthy</option>
+		</form>
 	</body>
 </html>
